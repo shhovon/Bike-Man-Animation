@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    text-align: center;
+}
+.bike{
+    margin: auto;
+    background-image: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
+    text-align: center;
+}
+
+#right-wheel, #left-wheel {
+    animation: wheel 1s linear infinite;
+    transform-origin: center;
+    transform-box: fill-box;
+}
+
+@keyframes wheel{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
